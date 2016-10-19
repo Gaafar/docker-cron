@@ -6,7 +6,7 @@ simple container to run cron jobs
 
 `/path/to/cron`: **absolute** path to crontab file
 
-## use as base for a container
+## use as base in a Dockerfile
 ```
 FROM gaafar/cron
 
