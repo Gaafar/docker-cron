@@ -23,4 +23,4 @@ COPY crontab /etc/cron.d/crontab
 ```
 
 ## Notes
-- Docker environment variables won't be available for the cron script by default. Google `docker cron environment` for some workarounds.
+- Environment variables won't be available for the cron script by default. Google `docker cron environment` for some workarounds.
