@@ -1,7 +1,7 @@
 # docker-cron
 simple container to run cron jobs
 
-## run
+## running
 `docker run -v "/path/to/cron:/etc/cron.d/crontab" gaafar/cron`
 
 `/path/to/cron`: **absolute** path to crontab file
@@ -21,3 +21,6 @@ COPY crontab /etc/cron.d/crontab
 * * * * * root  echo "hello" >> /var/log/cron.log 2>&1
 # An empty line is required at the end a cron file.
 ```
+
+## Notes
+- Docker environment variables won't be available for the cron script by default. Google `docker cron environment` for some workarounds.
